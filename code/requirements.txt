@@ -1,0 +1,2 @@
+# Standard-library-only final runtime. Tesseract is optional for uncached OCR.
+

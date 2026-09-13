@@ -1,0 +1,5 @@
+{
+  "input_schema": "buy-or-wait-v1",
+  "output_schema": "buy-or-wait-output-v1",
+  "image_fact_cache": "reviewed-image-facts-v2"
+}

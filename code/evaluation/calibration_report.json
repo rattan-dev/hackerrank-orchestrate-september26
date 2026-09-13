@@ -1,0 +1,63 @@
+{
+  "candidates": {
+    "mean": {
+      "field_exact_matches": {
+        "affordability_status": 20,
+        "earliest_date_for_full_payment": 19,
+        "payment_plan": 20,
+        "recommended_payment_method": 21,
+        "spending_changes_needed": 21
+      },
+      "safe_amount_mean_absolute_error_percent": "3.086986439297245830212005818",
+      "safe_amount_within_2_percent": 14,
+      "safe_amount_within_5_percent": 21
+    },
+    "median": {
+      "field_exact_matches": {
+        "affordability_status": 20,
+        "earliest_date_for_full_payment": 20,
+        "payment_plan": 20,
+        "recommended_payment_method": 21,
+        "spending_changes_needed": 20
+      },
+      "safe_amount_mean_absolute_error_percent": "3.285480841725529892718554307",
+      "safe_amount_within_2_percent": 14,
+      "safe_amount_within_5_percent": 21
+    },
+    "q25": {
+      "field_exact_matches": {
+        "affordability_status": 21,
+        "earliest_date_for_full_payment": 22,
+        "payment_plan": 22,
+        "recommended_payment_method": 23,
+        "spending_changes_needed": 21
+      },
+      "safe_amount_mean_absolute_error_percent": "4.006611484839224778083484452",
+      "safe_amount_within_2_percent": 15,
+      "safe_amount_within_5_percent": 21
+    },
+    "q75": {
+      "field_exact_matches": {
+        "affordability_status": 18,
+        "earliest_date_for_full_payment": 15,
+        "payment_plan": 18,
+        "recommended_payment_method": 19,
+        "spending_changes_needed": 19
+      },
+      "safe_amount_mean_absolute_error_percent": "3.962243845147955665696916676",
+      "safe_amount_within_2_percent": 13,
+      "safe_amount_within_5_percent": 20
+    }
+  },
+  "leave_one_out": "Prediction parameters are not fitted to answer columns, so removing any one public label leaves every prediction unchanged.",
+  "prohibited": [
+    "request-specific branches",
+    "copied answers",
+    "pending-income inflation",
+    "minimum-balance relaxation",
+    "arbitrary label-shaped rounding"
+  ],
+  "schema_version": "forecast-calibration-v1",
+  "selected": "mean",
+  "selection_reason": "Mean has the lowest public normalized amount error among conservative/non-lower-tail candidates. q25 improves some categorical labels but understates observed essentials and is rejected as unsafe label chasing."
+}

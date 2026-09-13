@@ -1,0 +1,102 @@
+{
+  "ai_runtime": {
+    "configured": false,
+    "estimated_cost_usd": 0,
+    "final_run_calls": 0,
+    "input_tokens": 0,
+    "note": "Optional guarded extraction is exercised only when configured; usage is never invented.",
+    "output_tokens": 0
+  },
+  "canonical_rows_sha256": "8a0ecc471e8d76a7f46fb6c46c5e2dc1577f5e321b1a771e0a73c1586a569b69",
+  "dataset_validation": "PASS",
+  "decision_distribution": {
+    "full_payment": 69,
+    "installments": 61,
+    "not_recommended": 59,
+    "partial_payment": 11,
+    "wait": 50
+  },
+  "determinism": "PASS",
+  "evaluation_requests": 250,
+  "explanations": {
+    "maximum_length": 872,
+    "total": 250,
+    "unique": 250
+  },
+  "leakage_scan": {
+    "markers": [],
+    "request_specific_branches": [],
+    "status": "PASS"
+  },
+  "ledger_replay": "PASS",
+  "mutation_checks": {
+    "results": {
+      "contradictory_status": true,
+      "empty_explanation": true,
+      "late_payment": true,
+      "overstated_safe_amount": true,
+      "unauthorized_change": true,
+      "unsupported_installment": true
+    },
+    "status": "PASS"
+  },
+  "package": {
+    "changed": [],
+    "crc_error": null,
+    "forbidden": [],
+    "missing": [],
+    "status": "PASS",
+    "unexpected": []
+  },
+  "public_examples": {
+    "exact_matches": {
+      "affordability_status": 20,
+      "amount_safe_to_pay": 3,
+      "earliest_date_for_full_payment": 19,
+      "payment_plan": 20,
+      "recommended_payment_method": 21,
+      "spending_changes_needed": 21
+    },
+    "safe_amount_mean_absolute_error_percent": "3.086986439297245830212005818",
+    "safe_amount_within_2_percent": 14,
+    "safe_amount_within_5_percent": 21,
+    "status": "PARTIAL",
+    "targets": {
+      "affordability_status": 23,
+      "earliest_date_for_full_payment": 22,
+      "payment_plan": 23,
+      "recommended_payment_method": 23,
+      "safe_amount_within_2_percent": 22,
+      "spending_changes_needed": 23
+    },
+    "total": 25
+  },
+  "quality_checks": {
+    "QC-01": "PASS",
+    "QC-02": "PASS",
+    "QC-03": "PASS",
+    "QC-04": "PASS",
+    "QC-05": "PARTIAL",
+    "QC-06": "PASS",
+    "QC-07": "PASS",
+    "QC-08": "PASS",
+    "QC-09": "PASS",
+    "QC-10": "PASS",
+    "QC-11": "PASS",
+    "QC-12": "PASS",
+    "QC-13": "PASS",
+    "QC-14": "PASS",
+    "QC-15": "PASS"
+  },
+  "runtime_seconds": 20.665,
+  "schema_version": "quality-audit-v2",
+  "summary": {
+    "PARTIAL": 1,
+    "PASS": 14
+  },
+  "unit_tests": {
+    "count": 47,
+    "status": "PASS"
+  },
+  "validated_output_rows": 250
+}

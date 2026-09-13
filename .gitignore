@@ -1,0 +1,7 @@
+log.txt
+chat_transcript.txt
+code/evaluation/latest_quality.json
+__pycache__/
+*.py[cod]
+.env
+.venv/
