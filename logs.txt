@@ -257,3 +257,10 @@ Added a separate logs.txt submission transcript covering the full chronological
 project conversation, including publication authorization and this request. Kept
 the internal append-only log.txt separate, refreshed artifact checksums and the
 submission bundle, and included logs.txt in the pending GitHub commit.
+
+[2026-09-13 11:24 UTC] ASSISTANT
+Published the full authorized submission to the public main branch. GitHub commit
+25ab31941414b3fc68c53df5c074312dcbbb0b88 contains all 35 intended changed files;
+the remote comparison is one commit ahead of the prior main with no missing base
+commits. Verified logs.txt and submission_checksums.sha256 directly from that
+commit. A final transcript-only follow-up records this successful outcome.
